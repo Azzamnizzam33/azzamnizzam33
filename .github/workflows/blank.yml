@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Downloading Ngrok.
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -unzip /path/to/ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/r00tsamsepi0l00/VPS-2022/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/r00tsamsepi0l00/VPS-2022/main/wallpaper.png -OutFile wallpaper.bmp
         Invoke-WebRequest https://raw.githubusercontent.com/r00tsamsepi0l00/VPS-2022/main/wallpaper.bat -OutFile wallpaper.bat
